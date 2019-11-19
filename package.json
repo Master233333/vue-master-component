@@ -1,0 +1,31 @@
+{
+  "name": "vue-master-component",
+  "version": "0.0.1",
+  "description": "vue component",
+  "main": "dist/index.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Master233333/vue-master-component.git"
+  },
+  "keywords": [
+    "vue",
+    "component"
+  ],
+  "author": "master233333",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Master233333/vue-master-component/issues"
+  },
+  "homepage": "https://github.com/Master233333/vue-master-component#readme",
+  "devDependencies": {
+    "vue": "^2.6.10"
+  }
+}
