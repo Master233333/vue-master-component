@@ -2,13 +2,19 @@
   "name": "vue-master-component",
   "version": "0.0.1",
   "description": "vue component",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "typings": "types/index.d.ts",
   "files": [
     "dist",
-    "types"
+    "types",
+    "es",
+    "lib"
   ],
   "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "node ./build/build-lib.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +32,31 @@
   },
   "homepage": "https://github.com/Master233333/vue-master-component#readme",
   "devDependencies": {
-    "vue": "^2.6.10"
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/preset-typescript": "^7.7.2",
+    "@vue/babel-preset-jsx": "^1.1.2",
+    "autoprefixer": "^9.7.2",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "fs-extra": "^8.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "postcss": "^7.0.23",
+    "postcss-loader": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "signale": "^1.4.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
   }
 }
