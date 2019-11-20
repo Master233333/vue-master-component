@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(config, {
   mode: 'development',
   entry: {
-    'index': './src/index.ts',
+    'demo': './test/demo.tsx',
   },
   devServer: {
     progress: true,
@@ -24,9 +24,7 @@ module.exports = merge(config, {
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'ts-loader',
-        }
+        loaders: ['babel-loader', 'ts-loader'],
       },
     ],
   },

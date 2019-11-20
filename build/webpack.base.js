@@ -5,7 +5,10 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
   mode: 'development',
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', '.vue', '.less']
+    extensions: ['.js', '.ts', '.tsx', '.vue', '.less'],
+    alias: {
+      '@': path.resolve(__dirname, '../src/'),
+    },
   },
   module: {
     rules: [
