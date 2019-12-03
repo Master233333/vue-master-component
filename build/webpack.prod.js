@@ -19,9 +19,7 @@ module.exports = merge(config, {
       {
         test: /\.(js|ts|tsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        }
+        loaders: ['babel-loader', 'ts-loader'],
       },
     ],
   },
@@ -31,7 +29,7 @@ module.exports = merge(config, {
       commonjs: 'vue',
       commonjs2: 'vue',
       amd: 'vue'
-    }
+    },
   },
   optimization: {
     minimize: false,

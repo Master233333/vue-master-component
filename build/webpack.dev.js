@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(config, {
   mode: 'development',
+  devtool: 'source-map',
   entry: {
     'demo': './test/demo.tsx',
   },
@@ -33,9 +34,7 @@ module.exports = merge(config, {
       cacheGroups: {
         chunks: {
           chunks: 'all',
-          minChunks: 2,
-          minSize: 0,
-          name: 'chunks'
+          name: 'common'
         }
       }
     }
@@ -45,5 +44,5 @@ module.exports = merge(config, {
       template: path.join(__dirname, '../public/index.html'),
       filename: 'index.html'
     }),
-  ]
+  ],
 });

@@ -1,9 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-  mode: 'development',
   resolve: {
     extensions: ['.js', '.ts', '.tsx', '.vue', '.less'],
     alias: {
@@ -12,19 +10,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.vue$/,
-        use: [
-          {
-            loader: 'vue-loader',
-            options: {
-              compilerOptions: {
-                preserveWhitespace: false
-              }
-            }
-          }
-        ]
-      },
       {
         test: /\.less$/,
         sideEffects: true,
@@ -44,6 +29,5 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new VueLoaderPlugin(),
   ]
 };

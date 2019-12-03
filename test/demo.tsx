@@ -1,15 +1,15 @@
-import Vue from 'vue';
+import Vue from "vue";
 import {Component} from "vue-property-decorator";
 import {Component as TsComponent} from "vue-tsx-support";
 import 'vue-tsx-support/enable-check';
-import Form from "@/form/form";
+import TemplateTest from "./template.test";
 
 @Component
 class App extends TsComponent<never> {
   public render() {
     return (
       <div>
-        <Form/>
+        <TemplateTest/>
       </div>
     );
   }

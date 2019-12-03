@@ -1,5 +1,2 @@
 import Menu from './menu';
-
-export {
-  Menu,
-};
+export { Menu, };

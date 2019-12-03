@@ -6,6 +6,7 @@ const tasks = [
   'npm i',
   'node build/build-components.js',
   'webpack --config ./build/webpack.prod.js',
+  'npm publish'
 ];
 
 tasks.every(task => {
