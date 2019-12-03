@@ -21,5 +21,9 @@ module.exports = {
         loose: true
       }
     ],
+    [
+      'import',
+      { libraryName: 'ant-design-vue', libraryDirectory: 'es', style: true },
+    ],
   ]
 };
