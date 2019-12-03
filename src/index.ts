@@ -1,5 +1,5 @@
 import {RouterMenu as Menu, createRouter, createRoutes, MenuConfig} from './menu';
-import {List, showModal, closeModal} from './list';
+import {List, showModal} from './list';
 import 'vue-tsx-support/enable-check';
 
 export {
@@ -9,5 +9,4 @@ export {
   MenuConfig,
   List,
   showModal,
-  closeModal,
 };

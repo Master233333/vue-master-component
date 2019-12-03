@@ -39490,37 +39490,54 @@ Modal.install = function (Vue) {
   Vue.component(Modal.name, Modal);
 };
 
-/* harmony default export */ var es_modal = (Modal);
-// CONCATENATED MODULE: ./src/modal/index.tsx
-
-function newInstance(vNode) {
-  const div = document.createElement('div');
-  new external_root_Vue_commonjs_vue_commonjs2_vue_amd_vue_default.a({
-    el: div,
-
-    render(h) {
-      return vNode(h);
-    }
-
-  });
-  return div;
-}
+/* harmony default export */ var modal = (Modal);
 // CONCATENATED MODULE: ./src/list/modal.tsx
 
 
 
-let dom = null;
+let modal_modal = null;
 function showModal() {
-  const modal = h => {
-    return h(es_modal, [h("input"), h("input")]);
-  };
-
-  dom = newInstance(modal);
-}
-function closeModal() {
-  if (dom) {
-    dom.remove();
+  if (modal_modal) {
+    modal_modal.$data.visible = true;
+    return;
   }
+
+  const div = document.createElement('div');
+  document.body.appendChild(div);
+
+  function render() {
+    return new external_root_Vue_commonjs_vue_commonjs2_vue_amd_vue_default.a({
+      el: div,
+
+      data() {
+        return {
+          visible: true
+        };
+      },
+
+      render() {
+        const h = arguments[0];
+        // @ts-ignore
+        return h(modal, {
+          "attrs": {
+            "title": "123"
+          },
+          "model": {
+            value: this.visible,
+            callback: $$v => {
+              this.visible = $$v;
+            }
+          }
+        }, [h("input"), h("input")]);
+      }
+
+    });
+  }
+
+  modal_modal = render();
+  return {
+    close: () => modal_modal.$data.visible = false
+  };
 }
 // CONCATENATED MODULE: ./src/list/list.tsx
 
@@ -39560,7 +39577,6 @@ var enable_check = __webpack_require__(304);
 /* concated harmony reexport createRoutes */__webpack_require__.d(__webpack_exports__, "createRoutes", function() { return createRoutes; });
 /* concated harmony reexport List */__webpack_require__.d(__webpack_exports__, "List", function() { return list_List; });
 /* concated harmony reexport showModal */__webpack_require__.d(__webpack_exports__, "showModal", function() { return showModal; });
-/* concated harmony reexport closeModal */__webpack_require__.d(__webpack_exports__, "closeModal", function() { return closeModal; });
 
 
 

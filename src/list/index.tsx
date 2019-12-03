@@ -1,8 +1,7 @@
 import {List} from './list';
-import {showModal, closeModal} from './modal';
+import {showModal} from './modal';
 
 export {
   List,
   showModal,
-  closeModal,
 };

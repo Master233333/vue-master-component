@@ -1,3 +1,3 @@
 import { List } from './list';
-import { showModal, closeModal } from './modal';
-export { List, showModal, closeModal, };
+import { showModal } from './modal';
+export { List, showModal, };

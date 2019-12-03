@@ -1,2 +1,3 @@
-export declare function showModal(): void;
-export declare function closeModal(): void;
+export declare function showModal(): {
+    close: () => boolean;
+} | undefined;

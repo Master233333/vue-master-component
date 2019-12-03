@@ -1,25 +1,32 @@
-import {newInstance} from "../modal";
-import {CreateElement} from "vue";
+import Vue, {CreateElement} from "vue";
 import {Modal} from "ant-design-vue";
 
-let dom: Element | null = null;
+let modal: any = null;
 
 export function showModal() {
-
-  const modal = (h: CreateElement) => {
-    return (
-      <Modal>
-        <input />
-        <input />
-      </Modal>
-    )
-  };
-
-  dom = newInstance(modal);
-}
-
-export function closeModal() {
-  if (dom) {
-    dom.remove();
+  if (modal) {
+    modal.$data.visible = true;
+    return ;
+  }
+  const div = document.createElement('div');
+  document.body.appendChild(div);
+  function render() {
+    return new Vue({
+      el: div,
+      data() {
+        return {visible: true}
+      },
+      render() {
+        // @ts-ignore
+        return <Modal v-model={this.visible} title="123" >
+          <input />
+          <input />
+        </Modal>
+      },
+    });
+  }
+  modal = render();
+  return {
+    close: () => modal.$data.visible = false,
   }
 }

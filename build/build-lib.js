@@ -6,7 +6,7 @@ const tasks = [
   'npm i',
   'node build/build-components.js',
   'webpack --config ./build/webpack.prod.js',
-  'git add *',
+  'git add ./',
   'git commit -m "test"',
   'git push'
 
@@ -19,7 +19,7 @@ tasks.every(task => {
   const interactive = new Signale({ interactive: true });
   interactive.pending(task);
 
-  const result = shell.exec(`${task} --silent`);
+  const result = shell.exec(`${task}`);
 
   if (result.code !== 0) {
     interactive.error(task);
