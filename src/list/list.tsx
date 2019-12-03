@@ -2,7 +2,7 @@ import {Table} from "ant-design-vue";
 import {Component, Prop} from "vue-property-decorator";
 import {Component as TsComponent} from "vue-tsx-support";
 import Vue from "vue";
-import {showModal} from "@/list/modal";
+import {showModal} from "./modal";
 
 interface TableProps {
   title?: string;

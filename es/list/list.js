@@ -12,7 +12,7 @@ function _initializerWarningHelper(descriptor, context) { throw new Error('Decor
 import { Component, Prop } from "vue-property-decorator";
 import { Component as TsComponent } from "vue-tsx-support";
 import Vue from "vue";
-import { showModal } from "@/list/modal";
+import { showModal } from "./modal";
 Vue.use(_Table);
 export let List = (_dec = Prop(), Component(_class = (_class2 = (_temp = class List extends TsComponent {
   constructor(...args) {
