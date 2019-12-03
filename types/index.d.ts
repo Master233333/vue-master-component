@@ -1,8 +1,3 @@
-import {Menu, MenuConfig, createRouter, createRoutes} from './menu';
-
-export {
-  Menu,
-  MenuConfig,
-  createRoutes,
-  createRouter,
-}
+import Menu, { createRouter, createRoutes } from './menu';
+import 'vue-tsx-support/enable-check';
+export { Menu, createRouter, createRoutes, };

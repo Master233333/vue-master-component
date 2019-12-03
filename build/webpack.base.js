@@ -20,7 +20,8 @@ module.exports = {
           {
             loader: 'less-loader',
             options: {
-              paths: [path.resolve(__dirname, 'node_modules')]
+              paths: [path.resolve(__dirname, 'node_modules')],
+              javascriptEnabled: true,
             }
           }
         ]

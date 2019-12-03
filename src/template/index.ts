@@ -1,7 +1,11 @@
 import {Component, Prop} from "vue-property-decorator";
 import {Component as TsComponent} from "vue-tsx-support";
-import {TemplateProps} from "../../types/template";
 import {CreateElement, Component as VueComponent} from "vue";
+
+export interface TemplateProps {
+  mif?: boolean;
+  tag?: string;
+}
 
 @Component
 export default class Template extends TsComponent<TemplateProps> {
