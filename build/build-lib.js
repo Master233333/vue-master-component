@@ -6,6 +6,10 @@ const tasks = [
   'npm i',
   'node build/build-components.js',
   'webpack --config ./build/webpack.prod.js',
+  'git add *',
+  'git commit -m "test"',
+  'git push'
+
   // 'npm publish'
 ];
 

@@ -47622,13 +47622,10 @@ function newInstance(vNode) {
 
 
 
-
 let dom = null;
 function showModal() {
-  external_root_Vue_commonjs_vue_commonjs2_vue_amd_vue_default.a.use(es_modal);
-
   const modal = h => {
-    return h("a-modal", [h("input"), h("input")]);
+    return h(es_modal, [h("input"), h("input")]);
   };
 
   dom = newInstance(modal);

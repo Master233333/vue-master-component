@@ -1,18 +1,17 @@
 import {newInstance} from "../modal";
-import Vue, {CreateElement} from "vue";
+import {CreateElement} from "vue";
 import {Modal} from "ant-design-vue";
 
 let dom: Element | null = null;
 
 export function showModal() {
-  Vue.use(Modal);
 
   const modal = (h: CreateElement) => {
     return (
-      <a-modal>
+      <Modal>
         <input />
         <input />
-      </a-modal>
+      </Modal>
     )
   };
 
