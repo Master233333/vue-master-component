@@ -15,7 +15,7 @@ interface IRouterMenu {
     menuConfig: MenuConfig[];
     mode?: string;
 }
-export default class RouterMenu extends TsComponent<IRouterMenu> {
+export declare class RouterMenu extends TsComponent<IRouterMenu> {
     menuConfig: MenuConfig[];
     mode: string;
     handleClick(e: any): void;

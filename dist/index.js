@@ -21161,12 +21161,12 @@ __decorate([Prop()], menu_RouterMenu.prototype, "menuConfig", void 0);
 __decorate([Prop()], menu_RouterMenu.prototype, "mode", void 0);
 
 menu_RouterMenu = __decorate([vue_class_component_esm], menu_RouterMenu);
-/* harmony default export */ var src_menu = (menu_RouterMenu);
+
 // EXTERNAL MODULE: ./node_modules/vue-tsx-support/enable-check.js
 var enable_check = __webpack_require__(237);
 
 // CONCATENATED MODULE: ./src/index.ts
-/* concated harmony reexport Menu */__webpack_require__.d(__webpack_exports__, "Menu", function() { return src_menu; });
+/* concated harmony reexport Menu */__webpack_require__.d(__webpack_exports__, "Menu", function() { return menu_RouterMenu; });
 /* concated harmony reexport createRouter */__webpack_require__.d(__webpack_exports__, "createRouter", function() { return createRouter; });
 /* concated harmony reexport createRoutes */__webpack_require__.d(__webpack_exports__, "createRoutes", function() { return createRoutes; });
 

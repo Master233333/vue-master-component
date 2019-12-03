@@ -65,7 +65,7 @@ export function createRouter(menuConfig, options) {
   }, options));
 }
 Vue.use(_Menu);
-let RouterMenu = (_dec = Prop(), _dec2 = Prop(), Component(_class = (_class2 = (_temp = class RouterMenu extends TsComponent {
+export let RouterMenu = (_dec = Prop(), _dec2 = Prop(), Component(_class = (_class2 = (_temp = class RouterMenu extends TsComponent {
   constructor(...args) {
     super(...args);
 
@@ -136,4 +136,3 @@ let RouterMenu = (_dec = Prop(), _dec2 = Prop(), Component(_class = (_class2 = (
   writable: true,
   initializer: null
 })), _class2)) || _class);
-export { RouterMenu as default };

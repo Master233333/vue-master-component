@@ -73,7 +73,7 @@ interface IRouterMenu {
 Vue.use(Menu);
 
 @Component
-export default class RouterMenu extends TsComponent<IRouterMenu> {
+export class RouterMenu extends TsComponent<IRouterMenu> {
   @Prop()
   menuConfig!: MenuConfig[];
   @Prop()
