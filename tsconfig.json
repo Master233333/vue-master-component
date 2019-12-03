@@ -12,6 +12,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "declaration": true,
+    "declarationDir": "types",
     "paths": {
       "@/*": [
         "src/*"
@@ -26,10 +27,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "test/**/*.ts",
-    "test/**/*.tsx"
+    "src/**/*.tsx"
   ],
   "exclude": [
     "node_modules"
