@@ -1,4 +1,4 @@
-import Vue, {CreateElement} from "Vue";
+import Vue, {CreateElement} from "vue";
 import {VNode} from "vue/types/vnode";
 
 export function newInstance(vNode: (h: CreateElement) => VNode): Element {
